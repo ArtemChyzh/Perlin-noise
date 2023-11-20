@@ -1,8 +1,8 @@
 from perlin import PerlinNoise
 
-SIZE = 512
-COUNT = 8
-SMOOTH_SCALE = 50
+SIZE = 256
+COUNT = 6
+SMOOTH_SCALE = 10
 
 noises = [PerlinNoise(SIZE)] * COUNT
 octaves = [2**i for i in range(0, COUNT)]
