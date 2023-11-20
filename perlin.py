@@ -131,13 +131,6 @@ class PerlinNoise:
         for i in range(self._size):
             for j in range(self._size):
                 value = self._matrix[i][j]
-                if value <= 0.5:
-                    color = (0, 0, 0)
-                elif (value > 0.5) and (value < 0.52):
-                    color = (32, 32, 32)
-                else:
-                    color = (128, 128, 128)
-                '''
                 if value < 0.05:
                     color = (0, 0, 16)
                 elif (value > 0.05) and (value <= 0.1):
@@ -156,6 +149,5 @@ class PerlinNoise:
                     color = (255, 255, 255)
                 else:
                     color = (0, 255, 0)
-                '''
                 image.putpixel((j, i), color)
         image.save(path)
